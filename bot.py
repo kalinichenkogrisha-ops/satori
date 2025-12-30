@@ -1,9 +1,11 @@
 import asyncio
 import os
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 
-TOKEN = os.getenv("8537075290:AAGqIAV0uzSfCDv-Ye2ajr2jqXtlFklcv6k")
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_LINK = "https://t.me/SatoriDzen"
 
 bot = Bot(token=TOKEN)
